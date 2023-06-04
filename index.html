@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME YETKI BAĞLANTISI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAclBMVEX///9iaI+KkrJFSnVkapD8/P35+ftpb5Sbn7ico75mbJKVm7h6fp7EyNi7vc6ws8fQ0d3f4eru7/Po6O61us6mqb/W2OKorsb09fiHi6lyeJqQmLVOU3xudJeOkq94fZ+BhqVZXoTAxNaVmLHKzNihpLzwS4FTAAAHN0lEQVR4nO2d6XbiOBBGYwNZGghLEpYQspDk/V9xIITIVm0SIFXpDN/vmdO+3brlQpuvri655JJLLrnEdqZT7Sc4U0a32k9wnkzq7kz7Gc6R3l1dDXraT3GGDOu6qu61n+L0TFc7kJvyfR/VO5CqeN8n9R6kKtz3rem/IIX7PqwPINWj9rOckmntQIr2fd4AqT61n+b4TOomSDXWfp5jszfdgRTr+7Bug5Tq+7T2QQr1fQRAyvR9VkOQEn3/M70F8nat/VzRGdYYSDXSfq7YTGsc5N+D9pNFZk6AlOb7rKZAyvK916dBivJ9U9MgJfk+rTmQgnyfsyDVq/bzhWZW8yCl+H7dl0Cey/B943MAkDJ8903HQIrw3TcdAynBd2A6ClJ9aT+nFGg6DmLed2g6DmLd9weMAwUx7jtiOgFi23fMdArEsu+o6SSIYd9R00mQaq79vFSQdzoL0p1oPzER3HQapFpqPzGeMcVBgtj0nTKdA1kvtJ8ayT3JQYNUT9pPDYO/0yUQg76TprMg9nynTedBqqH2k7fDmC6AGPP9keNgQWz5zpkugZjy/ekEEEu+s6aLIHZ8502XQcz4zpsug1jxXTA9AKSy4fvd6SDv2gy7SKaHgFQbbYqrq8XqHCAGfBdNDwKpvrU5ZNPDQNR9l00PBHnX3cwVYHogiK7vIaaHgqj6HmJ6KIim7xOZIQJEz/dekOnhIGq+fwVyhIJoHc4INL3uvz4/h4Eo+R5men/Z7XY6N4NuCInK4Ywg0/uD7eNtQTqd7iAAROMwVoDpq/5+SP2AdDofgxuRRMH3oYixWh/+nju/eXlbsxiVgu+S6f3Xf27AdFwk77Nv1h7xGMum200Q0fvMvrOm9z2v2yA77xmUvL4zph8MZ0B477MeziBNd4azIKz3GX2nTG8aLoAw3mf0HTe9bbgMQnqfzXfUdN/wEBDK+0y+I6YjhoeB4N5n8h2YjhoeCoJ6n8X3qWc6YXg4SAd6n8X3tumk4VEgwPsMvrdMZwyPBPG9T75Zu2E6b3g0SNv75L7/mS4ZfgRIy/vEhy8PW7Jkw48C6TjvE/s+Dzb8WJA/75MexpqEG348yMH7hL5vTQ82/BSQvfcJD2MNIww/DeTH+2SbtRcxhp8Kss0g2T/Jw2tOkEHKSe3xWy6Qj8QbO64f5Vm2M4C8fKffpj29TQ8yyHOUYRb5IokFybcduHcfNb7iQF6ecs4HTW8jmpQokGXuOdPJewqQG41Ln4ahb/lgkJeRziri4ilsfIWCZBtVPfAHTZbnA3kGL/JJsn+f8SNYrfwKaIZDQD7ADNDiKeGk0Hw19v+WrkdiJxkA8un/DfU265TH4hb9+g6MALGVFEFgezh7r9ZJjdn9RJyDP0FoJQUQOKp+3lKJJ4R2x11Ww7jxxYLA9nDfN6TeYrOf14Lji2slORDYHu47uXQ/qg753fsHxxfdStIgsD38Fe5fhp1Chym6DT4kIkBevskhmuVutMMhpD7oi4hWkgCBL/Lx4aW0zNKquBVEOL7QVhIFge2hK+O5VhEbZ6TvgZNIK4mAwPaw2bhl+2HV2ODUB+UetpIQBI6qJn++zY3XzVXEb1BA/VbSB1mDUdX6P3Je99Tefw1byfb4aoNg7WHrv866R7O9ICq0ki0Q2B56VTvvrRY97yAo20o2QOCPjplX5/JUXhd/bZdrJbv0qAJvnvyXa4J7KuhWsnt4kQf0Agon4OAmU2R8fToQ2B4i3b/GnYHYoT28ldyBkO1hK88qG3/RvTVYK9lFRhX+C0bpKvMNRoK1kkx7qFh5XXr4EV04vvwQs0h6h3pADf4NbCWboeb1bhSvRaJOJsFW0oWcaVU9m0Ru/4Wt5D703KTuba0L+uA0bCW3Y/GbwlCqvC7MTmbwqmfXh9Q/IrGhSbxXPbtip38SnD9+4Uoxv4aafhpLDlWDW+NLWNXOMY0lRzgduhtf0j4DI5/w4W7b+Rlf0nS9lXv1mBq8j8CRdgEhJtK5MZ6ja+j6X+ZuLRlEv/K6CEfgWA4LldeFv2iA47BReV3Y03wciJHK63LkjWdWKq8LdzCR5rBTeV2IC1l5EJMXNdKnqUkO9dtQ0FyTNZjisPq9CLIGExymLm1rharBBIjdz1r5iw08SO4FhJgQP7JQDttf58JrMApisvK6oDUY47D+EdHQm/ytVl4X7EcWAqI+jSVnEwJi/IMEP0EWGwCH8q1ggYE1GFRe299V+AuY6PJBzFxeKsVfbPA4yvncmz/R1ebQXkCIyYQDKaDyumxoELOfhkDTnugqr/K6tGpwgZXX5QsHMTeNJWeEgdibxpLTqMF/HBanseRMAIilBYSY3PsglhYQYgI+a27+xxSVhxaItQWEmAybIAVWXpe5Aymx8rrsFxvKrbwuswNIoZXX5XEPYnMBISa7xYYSprHkbGtw0ZXXZVgbXkCISW9ueQEhJtPCK+8ll1xyySX/g/wHwXZ8P3yOMiMAAAAASUVORK5CYII=" type="image/x-icon">
+    <!-- 
+        <link rel="icon" href="ekleyecegimiz resim" type="image/x-icon" />
+     -->
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo2.png" width="28" alt="">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Road Map</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">FAQS</a></li>
+            </ul>
+        </div>
+        <div class="action">
+            <i class="fa-solid fa-sun"></i>
+            <button>
+                <i class="fa-solid fa-wallet"></i>
+                <span>CONNECT</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="left">
+            <h3>Deep-diving Pexels</h3>
+            <h1>Capturing a Digital Footprint</h1>
+            <p>Inventing the best mesmerizing moments that touches the souls and tend time to infinity</p>
+            <button>
+                <span>PORTFOLIO </span>
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+        <div class="right">
+            <img src="images/main.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- PRODUCT -->
+    <div class="product">
+        <h1><span>TRENDING</span>AUCTIONS</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/product1.png" alt="product">
+                <div class="card-content">
+                    <div class="card-content-text">
+                        <h4>Crypto Monkey</h4>
+                        <span>by <b>Gemuid</b></span>
+                    </div>
+                    <button>Place Bid</button>
+                </div>
+
+                <div class="card-process">
+                    <div class="card-process-text">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <span>12.1 ETH</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="about">
+        <h1><span>About</span> NFT</h1>
+        <div class="abouts">
+            <div class="abouts-card">
+                <i class="fa-solid fa-wallet fa-4x"></i>
+                <h3>CONNECT YOUR WALLET</h3>
+                <p>Connect your Wallet, use the pink button in the left of the Header. Now you can use any feature.</p>
+            </div>
+            <div class="abouts-card">
+                <i class="fa-solid fa-square-plus fa-4x"></i>
+                <h3>CREATE ARTWORK</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sapiente. Fugiat autem officiis
+                    omnis laborum!</p>
+            </div>
+            <div class="abouts-card">
+                <i class="fa-solid fa-image fa-4x"></i>
+                <h3>UPLOAD YOUR NFTS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sapiente. Fugiat autem officiis
+                    omnis laborum!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSOR -->
+    <div class="sponsor">
+        <h1><span>SPONSOR</span> PARTNER</h1>
+        <img src="images/reklam1.png" alt="">
+        <img src="images/reklam4.png" alt="">
+        <img src="images/reklam3.png" alt="">
+        <img src="images/reklam1.png" alt="">
+        <img src="images/reklam4.png" alt="">
+        <img src="images/reklam3.png" alt="">
+        <img src="images/reklam5.png" alt="">
+        <img src="images/reklam3.png" alt="">
+        <img src="images/reklam2.png" alt="">
+        <img src="images/reklam1.png" alt="">
+        <img src="images/reklam4.png" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="images/logo2.png" width="28" alt="">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="rights">
+                &copy; 2023 NFT All right reserved
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li>Marketplace</li>
+                <li>Explore</li>
+                <li>NFTs</li>
+                <li>Collections</li>
+                <li>Virtualreally</li>
+            </ul>
+            <ul>
+                <li>Company</li>
+                <li>About Us</li>
+                <li>Support</li>
+                <li>Carrers</li>
+                <li>Newsletter</li>
+            </ul>
+            <ul>
+                <li>Resourses</li>
+                <li>Partners</li>
+                <li>Help Center</li>
+                <li>Live Action</li>
+                <li>Newsletter</li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
